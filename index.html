@@ -36,14 +36,15 @@
       // Fungsi yang digunakan untuk menambahkan tulisan
       // Jangan ubah cara deklarasi fungsinya, cukup isi saja
       function fnClickHandler(toDoItem) {
-        let li = document.createElement('li');
-        li.innerHTML = input.value;
-        if (toDoItem.key === 'Enter' || toDoItem.height === 1){
+        
+        //if (toDoItem.key === 'Enter'){// || toDoItem.height === 1){
+          let li = document.createElement('li');
+      
+          li.innerHTML = input.value;
           output.appendChild(li);
           input.value = '';
-          output.appendChild(li);
         }        
-      }
+      //}
 
       button.addEventListener('click', fnClickHandler);
       input.addEventListener('keypress', fnClickHandler);
